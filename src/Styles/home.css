@@ -1,0 +1,280 @@
+/* ===========================
+   GLOBAL COLOR THEME
+=========================== */
+:root {
+  --bg-dark: #0a0f1f;
+  --primary: #1e90ff;
+  --primary-light: #7fdbff;
+  --text-light: #f5f7fa;
+  --text-muted: #a5b3c5;
+  --card-bg: #111726;
+  --accent: #ff4f6d;
+}
+
+/* ===========================
+   BODY
+=========================== */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Arial', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* Layout container */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.home-header {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #102040, #0a0f1f);
+  color: var(--primary-light);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(30, 144, 255, 0.2);
+}
+
+.home-title {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+  color: var(--primary);
+  text-shadow: 0 0 18px rgba(30, 144, 255, 0.45);
+}
+
+.home-subtitle {
+  font-size: 1.4rem;
+  margin-top: 12px;
+  color: var(--text-muted);
+}
+
+/* ===========================
+   ABOUT SECTION (Left text, Right photo)
+=========================== */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 50px;
+  gap: 50px;
+}
+
+/* About text */
+.about-section {
+  max-width: 60%;
+}
+
+.about-section h2 {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 18px;
+  text-shadow: 0 0 12px rgba(30, 144, 255, 0.2);
+}
+
+.about-section p {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+}
+
+/* Circular profile frame */
+.profile-frame {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--primary);
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.4);
+  flex-shrink: 0;
+}
+
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+.projects-section {
+  margin: 60px 0;
+}
+
+.projects-section h2 {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  margin-bottom: 5%;
+
+  /* AOS-ready starting state */
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* Once AOS attaches its classes, transitions will kick in smoothly */
+.project-card[data-aos] {
+  visibility: visible;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 30px rgba(30,144,255,0.35);
+  background-color: #161d30;
+}
+
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: var(--primary-light);
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(30,144,255,0.35);
+}
+
+.project-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* Link inside card */
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--primary-light);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(30,144,255,0.4);
+}
+
+/* external link icon */
+.external-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.6rem;
+  color: var(--primary-light);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.external-link:hover {
+  transform: scale(1.15);
+  color: var(--primary);
+}
+
+/* ===========================
+   DEMO VIDEO
+=========================== */
+.demo-video {
+  display: block;
+  margin: 30px auto;
+  border: 4px solid var(--primary-light);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(30,144,255,0.4);
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+.contact-section {
+  margin: 60px 0;
+  padding: 40px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: var(--primary-light);
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-link {
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.contact-link:hover {
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  box-shadow: 0 0 10px rgba(30,144,255,0.4);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.home-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px; /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #111726; /* dark track */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-light); /* neon blue */
+  border-radius: 6px;
+  border: 3px solid #111726;
+  box-shadow: 0 0 8px var(--primary-light); /* neon glow effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7fdbff; /* lighter blue on hover */
+  box-shadow: 0 0 12px #7fdbff; /* stronger glow on hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-light) #111726;
+}
