@@ -43,14 +43,14 @@ const Home = () => {
             building great things—I’d love to connect.
           </p>
           <p>
-              <a href="/pdfs/Resume.pdf" target="_blank" rel="noopener noreferrer" className="project-link">
+              <a href="pdfs/Resume.pdf" target="_blank" rel="noopener noreferrer" className="project-link">
               View My Resume
               </a>
             </p>
         </section>
 
         <div className="profile-frame" data-aos="fade-left">
-          <img src="/images/Headshot2.png" alt="Charlie Hume" />
+          <img src="images/Headshot2.png" alt="Charlie Hume" />
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
           {/* Project 1 */}
           <div className="project-card" data-aos="fade-up" data-aos-delay="0">
             <h3>
-                <img src="/images/SCLogo.png" style={{ width: '7%', height: '7%', marginRight: '2%', verticalAlign: 'middle'}}></img>
+                <img src="images/SCLogo.png" style={{ width: '7%', height: '7%', marginRight: '2%', verticalAlign: 'middle'}}></img>
                 <span style={{ verticalAlign: 'middle' }}>Social Connect</span>
                 <a href="https://github.com/CSC4700-Spring2024-Org/csc4700-team-project-socialconnect" target="_blank" rel="noopener noreferrer" className="external-link">
                     <FiExternalLink/>
@@ -75,7 +75,7 @@ const Home = () => {
             </p>
             {/* <video width="640" height="360" controls className="demo-video"> */}
             <video width="95%" height="40%" controls className="demo-video" autoPlay loop muted>
-                <source src="/videos/SCdemo.mp4" type="video/mp4"/>
+                <source src="videos/SCdemo.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
           </div>
@@ -91,10 +91,10 @@ const Home = () => {
                 inverse) to solve our matrix. Then, using our QPI metric, we were able to create our Clutch Factor formula, which compares quarterback performance in the fourth 
                 quarter within one score to quarterback performance in the first three quarters. Our results were fascinating.
             </p>
-            <img src='/images/QPI Visual.png' width="95%" height="60%" className="demo-video"></img>
-            <img src='/images/CF 2023 QB Ranking.png' width="95%" height="60%" className="demo-video"></img>
+            <img src='images/QPI Visual.png' width="95%" height="60%" className="demo-video"></img>
+            <img src='images/CF 2023 QB Ranking.png' width="95%" height="60%" className="demo-video"></img>
             <p>
-              <a href="/pdfs/ClutchFactor.pdf" target="_blank" rel="noopener noreferrer" className="project-link">
+              <a href="pdfs/ClutchFactor.pdf" target="_blank" rel="noopener noreferrer" className="project-link">
               View PDF
               </a>
             </p>
@@ -109,10 +109,10 @@ const Home = () => {
                 an apocalyptic world using Unity. We used Google Earth tools paired with Blender to create the perfect 
                 recreation of Villanova's campus. All of our code was written in C#.
             </p>
-            <img src='/images/VillanovaMapZoomedOut.png' width="95%" height="60%" className="demo-video">
+            <img src='images/VillanovaMapZoomedOut.png' width="95%" height="60%" className="demo-video">
             </img>
             <video width="95%" height="60%" controls className="demo-video" autoPlay loop muted style={{marginTop: "5%"}}>
-                <source src="/videos/VillanovaSurvivalDemo.mp4" type="video/mp4"/>
+                <source src="videos/VillanovaSurvivalDemo.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
           </div>
@@ -128,13 +128,13 @@ const Home = () => {
             </p>
             {/* <video width="640" height="360" controls className="demo-video"> */}
             <video width="95%" height="60%" controls className="demo-video" autoPlay loop muted style={{marginTop: "5%"}}>
-                <source src="/videos/model.mp4" type="video/mp4"/>
+                <source src="videos/model.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
             <h4>
               Retopology
             </h4>
-            <img src='/images/Retopology.png' width="95%" height="60%" className="demo-video">
+            <img src='images/Retopology.png' width="95%" height="60%" className="demo-video">
             </img>
           </div>
         </div>
